@@ -1,0 +1,9 @@
+<div>
+Search the phones<br>
+<input ng-model="searchString" /><br><br>
+	<a ng-repeat="product in products | searchFor:searchString" href="#/details/{{product.product_id}}">
+		<div style="border:1px solid #696969; padding:5px; margin-bottom:10px">
+			<h3>{{product.naziv}}</h3>
+		</div>
+	</a>
+</div>
